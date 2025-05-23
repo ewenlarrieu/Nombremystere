@@ -1,0 +1,101 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(#74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+    width: 380px;
+    border: 3px solid;
+    border-color: #2d3a4b;
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+
+
+}
+
+h1 {
+    color: #2d3a4b;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+#guess {
+    width: 220px;
+    height: 48px;
+    border-radius: 18px;
+    border: 1px solid #bfc9d1;
+    background: #f7f7e2;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#guess:focus {
+    border: 1.5px solid #74ebd5;
+}
+
+#ok,
+button {
+    padding: 0.7rem s;
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+}
+
+#ok:hover,
+button:hover {
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+
+p#message {
+    margin-top: 1.5rem;
+    color: #2d3a4b;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    min-height: 1.5em;
+    margin: 0;
+    padding: 0 10px;
+    word-break: break-word;
+}
+
+@media (max-width: 500px) {
+    .conteneur {
+        width: 95vw;
+        min-height: 350px;
+        padding: 15px 5px;
+    }
+
+    #guess {
+        width: 90vw;
+        max-width: 250px;
+    }
+}
